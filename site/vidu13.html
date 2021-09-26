@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table (số cột không bằng nhau)</title>
+</head>
+<body>
+	<h4>Ô có kích thước bằng 2 cột:</h4>
+	<table border="1">
+		<tr>
+			<th>Họ tên</th>
+			<th colspan="2">Điện thoại</th>
+		</tr>
+		<tr>
+			<td>Nguyễn Thị Kim Duyên</td>
+			<td>0789539655</td>
+			<td>(071)935798</td>
+		</tr>		
+	</table>
+	<h4>Ô có kích thước bằng 2 dòng:</h4>
+	<table border="1">
+		<tr>
+			<th>Họ tên</th>
+			<td>Nguyễn Thị Kim Duyên</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Điện thoại</th>
+			<td>(0789)539655</td>
+		</tr>
+		<tr>
+			<td>(071)935798</td>
+		</tr>
+	</table>
+</body>
+</html>
