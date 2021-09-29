@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Thẻ Image</title>
-</head>
+<html>
 <body>
-	<p>
-		Em làm cho vui thôi chứ em không làm được giống như ví dụ của thầy :((
-	</p>
-	<img src="planet.jpg" width="145" height="126" usemap="#planetmap">
-		<area shape="rect" coords="0,0,82,126" href="mattroi.htm">
-		<area shape="circle" coords="90,58,3" href="saothuy.htm">
-		<area shape="circle" coords="124,58,8" href="saokim.htm">
-	</map>
-<br>
-	<a href="https://duyenb1905898.github.io/kc326-test/site/">Quay lại trang chủ</a>
+
+<h1>The area coords attribute</h1>
+
+<p>Click vào để nhìn rõ hơn:</p>
+
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map id="planetmap" name="planetmap">
+<area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+<area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+<area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+
 </body>
 </html>
