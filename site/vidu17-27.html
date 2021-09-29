@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ví dụ 17 - 27</title>
+</head>
+<body>
+	<h3>vd 17: Text Field </h3>
+	<form action="/action_page.php" method="post">
+		<input type="text" name="fname" required>
+		<input type="submit" value="Submit">	
+	</form>
+	<p> If you click submit, without filling out the text field, your brower will display an error message.</p>
+	<br>
+	<br>
+	<br>
+	<form>
+		<h3>vd 18: Password</h3>
+		user name: <br>
+		<input type="text" name="userid">
+		<br>
+		user password: <br>
+		<input type="password" name="psw">
+	</form>
+	<br>
+	<br>
+	<br>
+	<h3>vd 19: Radio Button</h3>
+	<form>
+		<input type="radio" name="sex" value="male"> Male
+		<br>
+		<input type="radio" name="sex" value="female"> Female
+	</form>
+	<br>
+	<br>
+	<br>
+	<h3>vd 20: Checkbox</h3>
+	<form>
+		<input type="checkbox" name="bike" value="yes"> I have a bike
+		<br>
+		<input type="checkbox" name="car" value="yes"> I have a car
+	</form>
+	<br>
+	<br>
+	<br>
+	<h3>vd 21: Button</h3>
+	<input type="button" onclick="alert('Hello Word!')" value="Click Me!">
+	<br>
+	<br>
+	<br>
+	<h3>vd 22: Drop-down list </h3>
+		<form>
+		<select name="cars" size="3">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fial">Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+		<br><br>
+		<input type="submit">
+	</form>
+	<br>
+	<br>
+	<br>	
+	<h3>vd 23: Text Area</h3>
+		<form>
+		<textarea name="message" cols="30" rows="10"> The cat was playing in the garden.
+		</textarea>
+		<br>
+		<input type="submit">
+	</form>
+	<br>
+	<br>
+	<br>
+	<h3>vd 24: Submit button</h3>
+		<form action="action_page.php">
+		First name: <br>
+		<input type="text" name="firstname" value="Mickey">
+		<br>
+		Lastname: <br>
+		<input type="text" name="lastname" value="Mouse">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<br>
+	<br>
+	<br>
+	<h3>vd 25: File upload</h3>
+		<form enctype="multipart/form-data" action="upload.php" method="post">
+		Upload this file: <input name="userfile" type="file"><br>
+		<input type="submit" value="Upload File">
+	</form>
+	<br>
+	<br>
+	<br>
+	<h3>vd 26: Reset button</h3>
+		<form action="/action_page.php">
+		First name: <br>
+		<input type="text" name="firstname" value="Mickey"> <br>
+		Last name: <br>
+		<input type="text" name="lastname" value="Mouse">
+		<br><br>
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</form>
+	<br>
+	<br>
+	<br>
+	<h3>vd 27: Group</h3>
+		<form action="/action_page.php">
+		<fieldset>
+			<legend>Personal information:</legend>
+			First name: <br>
+			<input type="text" name="firstname" value="Mickey">
+			<br>
+			Last name: <br>
+			<input type="text" name="lastname" value="Mouse">
+			<br><br>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+	<p> The characters in a password field are masked (show as asterisks or circles).</p>
+</body>
+</html>

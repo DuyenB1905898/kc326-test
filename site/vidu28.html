@@ -3,18 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Thẻ Image</title>
+	<title>Ví dụ các thẻ form</title>
 </head>
 <body>
-	<p>
-		Click vào 1 trong những hành tinh để nhìn được rõ hơn:
-	</p>
-	<img src="planets.gif" width="145" height="126" usemap="#planetmap">
-	<map name="planentmap">
-		<area shape="rect" coords="0,0,82,126" href="mattroi.htm">
-		<area shape="circle" coords="90,58,3" href="saothuy.htm">
-		<area shape="circle" coords="124,58,8" href="saokim.htm">
-	</map>
-
+	<form action="receive.php" method="post">
+		Name <input type="text" name="lastname"
+		value="Nguyễn Thị Kim Duyênn"
+		size="30" maxlength="50">
+		<br>
+		Password <input type="password">
+		<br>
+		Married <input type="checkbox" checked="checked">
+		<br>
+		Male <input type="radio" checked="checked">&nbsp;&nbsp;
+		Female <input type="radio">
+		<br>
+		<input type="hidden">
+		Professional
+		<select>
+			<option>Database
+			<option selected> Network
+			<option>Software Engineering
+		</select>
+		<br>
+		<textarea name="Comment" cols="20" rows="5"></textarea>
+		<br>
+		<input type="submit"> <input type="reset">
+	</form>
 </body>
 </html>
