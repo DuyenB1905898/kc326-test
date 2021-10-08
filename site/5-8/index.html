@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1.ex1{
+			position: relative;
+			left: 20px;
+		}
+		h1.ex2{
+			position: relative;
+			left: -20px;
+		}
+		h1{
+			position: relative;
+			left: 40px;
+		}
+		h1.x{
+			position: absolute;
+			left: 100px;
+			top:800px;
+		}
+		h1.one{
+			visibility: visible;
+		}
+		h1.two{
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<h1>Normal Heading</h1>
+	<h1 class="ex1">Heading +20</h1>
+	<h1 class="ex2">Heading -20</h1>
+	<p>Relative positioning moves an element ralative to its orginal position.</p>
+	<br>
+	<br>
+	<h1>Heading A</h1>
+	<p>This is a paragraph.</p>
+	<h1>Heading B</h1>
+	<p>This is a paragraph.</p>
+	<h1>Heading C</h1>
+	<p>This is a paragraph.</p>
+	<h1>Heading D</h1>
+	<p>This is a paragraph.</p>
+	<br>
+	<br>
+	<h1 class='x'>This is heading</h1>
+	<p>With absolute positioning, an element can be placed anywhre on a page.</p>
+	<p>The LEFT position of the heading is 100 pixels from the left of the page. the TOP position is 800 pixels from the top of the page.</p>
+	<br>
+	<br>
+	<br>
+	<h1 class='one'>Heading one</h1>
+	<h1 class='two'>Heading two</h1>
+	<p>Where is heading two?</p>
+</body>
+</html>
