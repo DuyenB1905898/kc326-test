@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function red(){
+			document.getElementById('header').style.color='red'
+		}
+		function black(){
+			document.getElementById('header').style.color='black'
+		}
+		function landscape(){
+			document.getElementById('image').src='img/landscape.jpg'
+		}
+		function smiley(){
+			document.getElementById('image').src='img/smiley.gif'
+		}
+		function old(){
+			document.getElementById('header2').innerHTML='Old Header'
+		}
+		function neww(){
+			document.getElementById('header2').innerHTML='New Header'
+		}
+		function go(){ 
+			document.getElementById("picture").src= document.getElementById("gowhere").value
+		}
+		function selMultiple(){
+			document.getElementById("mySelect").multiple=true
+		}
+		function currLocation(){
+			alert(window.location)
+		}
+		function newLoadtion(){
+			window.location="https://www.w3schools.com"
+		}
+		cc=0
+		function changeimage(){
+			
+			if (cc==0) 
+			{
+				cc=1
+				document.getElementById('myimage').src="img/bulbon.gif"
+			}
+			else 
+			{
+				cc=0
+				document.getElementById('myimage').src="img/bulboff.png"
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1 id="header" >My Header</h1>
+	<button type="button" onclick="red()">Red</button>
+	<button type="button" onclick="black()">Black</button>
+	<p><b>Note:</b> It is the script that changes the style of the element!</p>
+	<img id="image" src="img/smiley.gif" width="200px" height="150px"><br>
+	<button type="button" onclick="landscape()">Landscape</button>
+	<button type="button" onclick="smiley()">Smiley</button>
+	<p><b>Note:</b> The original image was a smiley, but the script changes the source to a landscape image!</p>
+	<h1 id="header2">Old Header</h1>
+	<button type="button" onclick="neww()">New</button>
+	<button type="button" onclick="old()">Old</button>
+	<p><b>Note:</b> That the original text was "Old header" !</p>
+	<form>	
+		<select id="gowhere" onchange="go()">
+			<option>-Select a pet-</option>
+			<option value="img/cat.png">A Cat</option>
+			<option value="img/dog.png">A Dog</option>
+			<option value="img/hamster.png">A Hamster</option>
+		</select>
+	</form>
+	<img id="picture" width="200px">
+	<p>Before you click on the "Select mutiple" button, try to select more than one option (by holding down the shift or Ctrl key). Then click on the "Select multiple" button and try again.</p>
+	<form>
+		<select id="mySelect" >
+			<option>Apple</option>
+			<option>Pear</option>
+			<option>Banana</option>
+			<option>Orange</option>
+		</select>
+		<input type="button" onclick="selMultiple()" value="Select multiple">
+	</form>
+	<br>
+	<input type="button" onclick="currLocation()" value="Show current URL">
+	<input type="button" onclick="newLoadtion()" value="Change URL">
+	<h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
+	<form>
+		<img id="myimage" onclick="changeimage()"
+		border="0" src="img/bulboff.png"
+		width="100" height="180"/>
+		<p>Click to turn on/off the light</p>
+	</form>
+</body>
+</html>
