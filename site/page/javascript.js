@@ -46,8 +46,3 @@
 		document.getElementById('btn').innerHTML='Quay lại trang chủ'
 		document.getElementById('dropdown-content').innerHTML= ''
 	}
-
-
-
-
-
