@@ -37,7 +37,7 @@ li a:hover:not(.active) {
 }
 
 .mid{
-	margin: 10% 20% 0;
+	margin: 9% 20% 0;
 }
 
 .bottom{
@@ -166,4 +166,8 @@ th {
 .bigcoll {
 	text-align: left;
 	padding: 10px;
+}
+
+tr:hover{
+	background-color: black;
 }
