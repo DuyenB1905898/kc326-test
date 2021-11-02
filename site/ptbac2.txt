@@ -1,0 +1,11 @@
+0x^2+bx+c=0
+TH a = 0:
+	bx+c=0
+	TH b=0 : c=0
+		c
+		TH c=0
+			vo so nghiem
+		TH c!=0
+			vo nghiem
+	TH b!=0: bx+c=0
+		x= 
