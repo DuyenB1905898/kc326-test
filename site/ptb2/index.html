@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Phương trình bậc 2</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="../index.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script type="text/javascript" src="../index.js"></script>
+</head>
+<body>
+	<div class="top">
+	<div class="ttop">
+			<div class="top1">
+				<h1>
+					<a href="https://duyenb1905898.github.io/kc326-test/site/"><i class="fa fa-home"  aria-hidden="true"></i> | &nbsp;<font face="Bedrock" size="6"></a>
+					<a href="https://duyenb1905898.github.io/kc326-test/site/">Home</a></font><br/>
+				</h1>
+			</div>
+
+			<div class="top2">
+
+				<div class="dropdown1">
+					<a href="index.html"><h1><i class="fas fa-bars"></i></h1></a>
+					<div class="dropdown-content">
+						<ul>
+							<li>
+								<a href="https://duyenb1905898.github.io/kc326-test/site/page/" target="_blank">Công nghệ IoT và ứng dụng</a>
+							</li>
+							<hr>
+							<li>
+								<a  href="https://duyenb1905898.github.io/kc326-test/site/ptb2/">Giải phương trình bậc 2</a>
+							</li>
+							<hr>
+							<li>
+								<a  href="https://duyenb1905898.github.io/kc326-test/site/dths/">Đồ thị hàm số với Chart.js</a>
+							</li>
+						</ul>
+  						
+  						
+  					</div>
+				</div>
+
+				<div class="person1">
+					<a href="https://www.instagram.com/explore/locations/241976064/truong-ai-hoc-can-tho-can-tho-university/" target="_blank"><img src="../img/ints.jpg" style="width:35px; height:35px; margin-top:-2px;" alt=""></a>
+				</div>
+
+				<div class="person1">
+					<a href="https://www.facebook.com/CTUDHCT" target="_blank"><img src="../img/fb.png" width="30px" height="30px" alt=""></a>
+				</div>
+			</div>
+	</div>
+</div>
+		<div class="header" style="margin-top: 150px;">
+		<h1 class="bt1"><span>G</span><span>i</span><span>ả</span><span>i</span><span> </span><span>p</span><span>h</span><span>ư</span><span>ơ</span><span>n</span><span>g</span><span> </span><span>t</span><span>r</span><span>ì</span><span>n</span><span>h</span><span> </span><span>b</span><span>ậ</span><span>c</span> <span>2</span></h1>
+		<h3 class="bt11"><span id='span-a'>a</span><span>x<sup>2</sup></span><span>+</span><span id='span-b'>b</span><span>x</span><span>+</span><span id='span-c'>c</span><span>=</span><span>0</span></h3>
+	</div>
+	<div class="row">
+		<div class="wrapper" style="">
+	  		<input type="number" name="input-a" id="input-a" placeholder="Nhập.." oninput="tinhtoan()" />
+	  		<label id="label-a" for="input-a">Hệ số a</label>
+		</div>
+		<div class="wrapper" style="">
+	  		<input type="number" name="input-b" id="input-b" placeholder="Nhập.." oninput="tinhtoan()" />
+	  		<label id="label-b" for="input-b">Hệ số b</label>
+		</div>
+		<div class="wrapper" style="">
+	  		<input type="number" name="input-c" id="input-c" placeholder="Nhập.." oninput="tinhtoan()" />
+	  		<label id="label-c" for="input-c">Hệ số c</label>
+		</div>
+	</div>
+	<div class="header-btn">
+			<a onclick="reload();" href="javascript:void(0);"><img src="../img/reload.png" width="30px"></a>
+	</div>
+	<div class="row2">
+		<div style="display: inline-block; text-align: left; margin: 0 5% 0;">
+			<p  class="opaque" id='vonghiem'><span>P</span><span>h</span><span>ư</span><span>ơ</span><span>n</span><span>g</span> <span>t</span><span>r</span><span>ì</span><span>n</span><span>h</span> <span>v</span><span>ô</span> <span>n</span><span>g</span><span>h</span><span>i</span><span>ệ</span><span>m</span></p>
+			<p  class="opaque" id='vosonghiem'><span>P</span><span>h</span><span>ư</span><span>ơ</span><span>n</span><span>g</span> <span>t</span><span>r</span><span>ì</span><span>n</span><span>h</span> <span>v</span><span>ô</span> <span>s</span><span>ố</span> <span>n</span><span>g</span><span>h</span><span>i</span><span>ệ</span><span>m</span></p>
+			<p  class="opaque" id='1nghiem'><span>P</span><span>h</span><span>ư</span><span>ơ</span><span>n</span><span>g</span> <span>t</span><span>r</span><span>ì</span><span>n</span><span>h</span> <span>c</span><span>ó</span> <span>1</span> <span>n</span><span>g</span><span>h</span><span>i</span><span>ệ</span><span>m</span></p>
+			<p  class="opaque" id='2nghiem'><span>P</span><span>h</span><span>ư</span><span>ơ</span><span>n</span><span>g</span> <span>t</span><span>r</span><span>ì</span><span>n</span><span>h</span> <span>c</span><span>ó</span> <span>2</span> <span>n</span><span>g</span><span>h</span><span>i</span><span>ệ</span><span>m</span></p>
+		</div>
+		<div class='x1x2'>
+			<h4 id="x1">X1 = ?</h4>
+			<h4 id="x2">X2 = ?</h4>
+		</div>
+	</div>
+</body>
+</html>
