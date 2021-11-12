@@ -407,6 +407,26 @@ hr{
   	margin: 0 2% 0;
 }
 
+.btn{
+	font: inherit;
+  	border-radius: 5px;
+  	border: 1px solid #479B9D;
+  	text-align: center;
+  	padding: 4px;
+  	background: #479B9D;
+  	color: #fff;
+  	float: left;
+}
+
+.onbtn{
+	font: inherit;
+  	border-radius: 5px;
+  	border: 1px solid #479B9D;
+  	text-align: center;
+  	padding: 4px;
+  	float: left;
+}
+
 .wrapper input {
   width: 100%;
   height: 100%;
@@ -483,6 +503,7 @@ hr{
 }
 
 .dothi{
-	width: 60%;
-	margin-left: 20%;
+	width: 90%;
+	margin-left: 5%;
 }
+

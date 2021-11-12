@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="../index.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
-<body onload='vedothi()'>
+<body onload='veptb2df()'>
 	<div class="top">
 	<div class="ttop">
 			<div class="top1">
@@ -52,11 +52,43 @@
 			</div>
 	</div>
 </div>
-		<div class="header">
-		<h1 class="bt1" style="margin: 150px 0 30px 0;"><span>V</span><span>ẽ</span> <span>đ</span><span>ồ</span> <span>t</span><span>h</span><span>ị</span> <span>h</span><span>à</span><span>m</span> <span>s</span><span>ố</span> <span>v</span><span>ớ</span><span>i</span> <span>C</span><span>h</span><span>a</span><span>r</span><span>t.</span><span>j</span><span>s</span></h1>
+	<div class="header">
+		<h1 class="bt1" style="margin: 50px 0 0px 0;"><span>V</span><span>ẽ</span> <span>đ</span><span>ồ</span> <span>t</span><span>h</span><span>ị</span> <span>h</span><span>à</span><span>m</span> <span>s</span><span>ố</span> <span>v</span><span>ớ</span><span>i</span> <span>C</span><span>h</span><span>a</span><span>r</span><span>t.</span><span>j</span><span>s</span></h1>
+	</div>
+	<div class="row" style="width: 70%; margin-left: 15%;">
+		<div class="onbtn" id="bac2" onclick="veptb2df()">Phương trình bậc 2</div>
+		<div class="btn" id="bac3" onclick="veptb3df()">Phương trình bậc 3</div>
+		<div class="btn" id="bac4" onclick="veptb4df()">Phương trình bậc 4</div>
+		<div class="btn" id="sin" onclick="vesin()">Phương trình hàm Sin</div>
+		<div class="btn" id="cos" onclick="vecos()">Phương trình hàm Cos</div>
+		<div class="onbtn" style="width: 100%; height: 50px;">
+			<div class="wrapper" style="">
+	  			<input  type="number" name="input-a" id="input-a-dt" placeholder="Nhập.." oninput="vedothi()" />
+	  			<label id="label-a-dt" for="input-a-dt">x⁴</label>
+			</div>
+			<div class="wrapper" style="">
+		  		<input type="number" name="input-b" id="input-b-dt" placeholder="Nhập.." oninput="vedothi()" />
+		  		<label id="label-b-dt" for="input-b-dt">x³</label>
+			</div>
+			<div class="wrapper" style="">
+		  		<input type="number" name="input-c-dt" id="input-c-dt" placeholder="Nhập.." oninput="vedothi()" />
+		  		<label id="label-c-dt" for="input-c-dt">x²</label>
+			</div>
+			<div class="wrapper" style="">
+		  		<input type="number" name="input-d-dt" id="input-d-dt" placeholder="Nhập.." oninput="vedothi()" />
+		  		<label id="label-d-dt" for="input-d-dt">x¹</label>
+			</div>
+			<div class="wrapper" style="">
+		  		<input type="number" name="input-c" id="input-e-dt" placeholder="Nhập.." oninput="vedothi()" />
+		  		<label id="label-e-dt" for="input-e-dt">x⁰</label>
+			</div>
+		</div>
+		<div class="header-btn">
+			<a onclick="location.reload()" href="javascript:void(0);"><img src="../img/reload.png" width="30px"></a>
+		</div>
 	</div>
 	<div class='dothi' style="margin-bottom: 150px;">
-		<canvas id="line-chart" height="250" width="450" ></canvas>
+		<canvas id="line-chart" height="130" ></canvas>
 	</div>
 </body>
 </html>
