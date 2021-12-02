@@ -1,0 +1,60 @@
+.form-leds img {
+		cursor: pointer;
+	}
+
+.form-leds {
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 500px;
+	
+	display: flex;
+	flex-flow: column nowrap;
+
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+
+
+
+.form-leds .btn {
+	border-radius: 0;
+	border: none;
+
+	border-bottom: 1px solid black;
+
+	flex: 1;
+}
+
+
+.form-leds .btn:first-child {
+	border-top-left-radius: 10px;
+	border-right: 1px solid black;
+}
+
+.form-leds .btn:last-child {
+	border-top-right-radius: 10px;
+	border-left: 1px solid black;
+}
+
+
+
+
+.form-leds .leds-btn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-leds .slider {
+		flex: 1;
+		margin-right: 10px;
+	}
+
+.form-leds .leds-slider  {
+	
+	padding-top: 10px;
+	border-top: 1px solid black;
+}
+
+
+
